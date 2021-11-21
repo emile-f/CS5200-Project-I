@@ -11,3 +11,6 @@ async function getDatabase() {
 
 
 module.exports.getDatabase = getDatabase;
+
+
+//Jiaqi: This is a good practice. Using util.js to avoid the duplicate open database code. I will adapt to this in my project2.
