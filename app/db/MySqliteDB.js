@@ -86,6 +86,7 @@ async function createRestaurant(r) {
     ":dressCodeID": r.dressCodeID,
     ":priceRangeMin": r.priceRangeMin,
     ":priceRangeMax": r.priceRangeMin,
+    //Jiaqi: Is this a typo? 
     ":openHours": r.openHours,
     ":closeHours": r.closeHours,
   });
@@ -270,3 +271,6 @@ module.exports.getRestaurantCount = getRestaurantCount;
 module.exports.getCuisineByID = getCuisineByID;
 module.exports.getDistinctCuisine = getDistinctCuisine;
 module.exports.getRestByCuisine = getRestByCuisine;
+
+//Jiaqi: Well done! There are queries joining two tables and even three tables. 
+//I also notice that some functions do not have the db.close() part. Just wondering if it will affect the application.
